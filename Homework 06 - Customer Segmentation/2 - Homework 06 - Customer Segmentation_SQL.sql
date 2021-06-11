@@ -1,0 +1,12 @@
+#Homework 06 - Customer Segmentation
+
+#NUMBER_CLUSTERS=3
+CREATE MODEL`bads7105-313104.Supermarketdata.Supermarketdata_CLUSTERS`
+OPTIONS( MODEL_TYPE='KMEANS',NUM_CLUSTERS=3,KMEANS_INIT_METHOD='RANDOM') 
+AS SELECT*FROM`bads7105-313104.Supermarketdata.Supermarketdata`
+
+
+#NUMBER_CLUSTERS=7
+CREATE MODEL`bads7105-313104.Supermarketdata.Supermarketdata_CLUSTERS7`
+OPTIONS( MODEL_TYPE='KMEANS',NUM_CLUSTERS=7,KMEANS_INIT_METHOD='RANDOM') 
+AS SELECT*FROM`bads7105-313104.Supermarketdata.Supermarketdata`
